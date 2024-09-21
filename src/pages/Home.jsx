@@ -48,15 +48,15 @@ const Home = () => {
   }, []);
 
   const handleSearchChange = (e) => {
-    clearTimeout(searchTimeout);
-    setSearchText(e.target.value);
+    // clearTimeout(searchTimeout);
+    // setSearchText(e.target.value);
 
-    setSearchTimeout(
-      setTimeout(() => {
-        const searchResult = allPosts.filter((item) => item.name.toLowerCase().includes(searchText.toLowerCase()) || item.prompt.toLowerCase().includes(searchText.toLowerCase()));
-        setSearchedResults(searchResult);
-      }, 500),
-    );
+    // setSearchTimeout(
+    //   setTimeout(() => {
+    //     const searchResult = allPosts.filter((item) => item.name.toLowerCase().includes(searchText.toLowerCase()) || item.prompt.toLowerCase().includes(searchText.toLowerCase()));
+    //     setSearchedResults(searchResult);
+    //   }, 500),
+    // );
   };
 
   return (
